@@ -1,0 +1,89 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #efefef;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	font-family: 'Dancing Script', cursive;
+	background-image: url(images/vineWall.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 91vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: rgb(0,0,0);
+	font-size: 3em;
+	position: relative;
+}
+
+header h1 {
+	flex-shrink: 1;
+	margin-top: 3em;
+	padding: 3%;
+	text-align: center;
+	border: 1px solid #F7E7CE;
+	background-color: rgba(247, 231, 206, .5);
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 2em 0 2em 0;
+	padding-bottom: 1%;
+	position: relative;
+}
+
+nav a {
+	text-decoration: underline; 
+	color: black;
+	font-size: 4em;
+}
+
+nav a:hover {
+	color: #87A29A;
+}
+
+content {
+	text-align: center;
+}
+
+content p {
+	margin: 2% 0;
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-left: 8%;
+	padding-right: 8%;	
+}
+
+span {
+	font-size: 2.5em;
+	color: #87A29A;
+}
+
+hr {
+	border: 0;
+    height: .1em;
+    background-image: linear-gradient(to right, rgba(135, 162, 154, 0), rgba(135, 162, 154, .75), rgba(135, 162, 154, 0));
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	border: 1px solid #F7E7CE;
+	background-color: rgba(0, 0, 0, .1);
+	min-height: auto;
+
+}
+
+footer p {
+	font-size: 2em;
+	align-self: flex-end;
+}
