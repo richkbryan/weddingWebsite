@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href='https://fonts.googleapis.com/css?family=Alex+Brush|Lato:400,300' rel='stylesheet' type='text/css'>
 		<link href="flexGrid.css" rel="stylesheet" type="text/css" />
 		<link href="main.css" rel="stylesheet" type="text/css" />
 		<title>Mr. & Mrs. Bryan</title>
 	</head>
 
 	<body>
-		<section class="section-wrapper">
-
-			<div class="hero-image row">
-				<img class="row-item" src="images/vineWall.jpg" />
+		<header>
+			<nav>
+				<a href="#aboutUs">About</a>
+				<a href="#proposal">Proposal</a>
+				<a href="#details">Details</a>
+				<a href="#registry">Registry</a>
+				<a href="#photos">Photos</a>
+			</nav>
+			<div class="hero-image">
+				<img class="" src="images/vineWall.jpg" />
 			</div>
 
 			<div class="content-wrapper row">
@@ -18,22 +25,53 @@
 				<h3 class="row row-item">are getting married on</h3>
 				<p class="row row-item">9.10.2016</p>
 				<h3 class="row row-item">that's in</h3>
-				<p class="row row-item">299 days</p>
+				<p class="row row-item">
+				<!--Countdown to our wedding date, credit for code snippet here: http://www.computerhope.com/j6.htm-->
+				<script type="text/javascript">
+				today = new Date();
+				BigDay = new Date("September 10, 2016");
+				msPerDay = 24 * 60 * 60 * 1000 ;
+				timeLeft = (BigDay.getTime() - today.getTime());
+				e_daysLeft = timeLeft / msPerDay;
+				daysLeft = Math.floor(e_daysLeft);
+				e_hrsLeft = (e_daysLeft - daysLeft)*24;
+				hrsLeft = Math.floor(e_hrsLeft);
+				minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
+				document.write(daysLeft + " days " + hrsLeft +" hours and " + minsLeft + " minutes");
+				</script></p>
+				<!---------->
 			</div>
-			<header>
-				<a href="#">About</a>
-				<a href="#">Proposal</a>
-				<a href="#">Venue</a>
-				<a href="#">Registry</a>
-				<a href="#">Photos</a>
-			</header>
-		</section>
+		</header>
 		
 
 		<section class="section-wrapper" id="aboutUs">
-			<h2 class="row row-item">About Us</h2>
+			<h2 class="row row-item">The Two Of Us</h2>
 
 			<p class="row row-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis felis eros. Duis cursus, massa quis condimentum tincidunt, nisl dolor vehicula sapien, vel consectetur nibh nisl ut dolor. Quisque nisl massa, semper vel odio et, sollicitudin malesuada odio. Nullam lacinia dictum diam, sed ultricies velit posuere sit amet. Nullam enim ex, consequat vitae eros id, pulvinar luctus risus. Suspendisse mollis, tortor quis vehicula interdum, elit metus placerat dolor, sit amet imperdiet nulla dolor et libero. Morbi id tellus id odio sagittis congue in ultricies orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis felis eros. Duis cursus, massa quis condimentum tincidunt, nisl dolor vehicula sapien, vel consectetur nibh nisl ut dolor. Quisque nisl massa, semper vel odio et, sollicitudin malesuada odio. Nullam lacinia dictum diam, sed ultricies velit posuere sit amet. Nullam enim ex, consequat vitae eros id, pulvinar luctus risus. Suspendisse mollis, tortor quis vehicula interdum, elit metus placerat dolor, sit amet imperdiet nulla dolor et libero. Morbi id tellus id odio sagittis congue in ultricies orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis felis eros. Duis cursus, massa quis condimentum tincidunt, nisl dolor vehicula sapien, vel consectetur nibh nisl ut dolor. Quisque nisl massa, semper vel odio et, sollicitudin malesuada odio. Nullam lacinia dictum diam, sed ultricies velit posuere sit amet. Nullam enim ex, consequat vitae eros id, pulvinar luctus risus. Suspendisse mollis, tortor quis vehicula interdum, elit metus placerat dolor, sit amet imperdiet nulla dolor et libero. Morbi id tellus id odio sagittis congue in ultricies orci.</p>
+		</section>
+
+		<section class="section-wrapper" id="proposal">
+			<h2 class="row row-item">How He Proposed</h2>
+
+			<p class="row row-item">Richard told me he had made reservations for a fancy date night. To kill time we went for a walk and he took me to this pavilion. I had no interest and I told him no because I was hungry. Lol. He insisted that we should just check it out. Once we got under the pavilion, he grabbed my hand and led me to the roses. I thought the city of Holland did the decorations for Labor Day weekend lol. I even said "these are my favorite roses!". I was clueless. He proposed, I said yes (obviously) then he led me by the hand and took me behind the pavilion to where our families were waiting to surprise me. HE PLANNED EVERYTHING PERFECTLY! &#10084;</p>
+		</section>
+
+		<section class="section-wrapper" id="details">
+			<h2 class="row row-item">Details</h2>
+
+			<p class="row row-item">We can not wait for our big day and we would love for you to be there! Below, you'll find directions to the church that we are getting married in! We have included nearby hotels in case you plan on staying the night. </p>
+
+			<div class="map-holder">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.1269631646824!2d-81.56606268478228!3d28.38523298251606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7ee634caa5f7%3A0xa71e391fd01cf1a0!2sWalt+Disney+World+Resort!5e0!3m2!1sen!2sus!4v1447969015862" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</section>
+
+		<section class="section-wrapper" id="registry">
+			<h2 class="row row-item">Registry</h2>
+		</section>
+
+		<section class="section-wrapper" id="photos">
+			<h2 class="row row-item">Photos</h2>
 		</section>
 
 		<section class="photo-flash">
