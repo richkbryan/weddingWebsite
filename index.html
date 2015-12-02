@@ -17,31 +17,42 @@
 				<a href="#photos">Photos</a>
 			</nav>
 			<div class="hero-image">
-				<img class="" src="images/vineWall.jpg" />
 			</div>
 
-			<div class="content-wrapper row">
-				<h1 class="row row-item">Danyel & Richard</h1>
-				<h3 class="row row-item">are getting married on</h3>
-				<p class="row row-item">9.10.2016</p>
-				<h3 class="row row-item">that's in</h3>
-				<p class="row row-item">
-				<!--Countdown to our wedding date, credit for code snippet here: http://www.computerhope.com/j6.htm-->
-				<script type="text/javascript">
-				today = new Date();
-				BigDay = new Date("September 10, 2016");
-				msPerDay = 24 * 60 * 60 * 1000 ;
-				timeLeft = (BigDay.getTime() - today.getTime());
-				e_daysLeft = timeLeft / msPerDay;
-				daysLeft = Math.floor(e_daysLeft);
-				e_hrsLeft = (e_daysLeft - daysLeft)*24;
-				hrsLeft = Math.floor(e_hrsLeft);
-				minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
-				document.write(daysLeft + " days " + hrsLeft +" hours and " + minsLeft + " minutes");
-				</script></p>
-				<!---------->
+			<div class="content-wrapper">
+				<h1>Danyel & Richard</h1>
+				<p>
+					<span>are getting married on</span>
+					<br />
+					9.10.2016
+					<br />
+					<span>that's in</span>
+					<br />
+					<!--Countdown to our wedding date, credit for code snippet here: http://www.computerhope.com/j6.htm-->
+					<script type="text/javascript">
+					today = new Date();
+					BigDay = new Date("September 10, 2016");
+					msPerDay = 24 * 60 * 60 * 1000 ;
+					timeLeft = (BigDay.getTime() - today.getTime());
+					e_daysLeft = timeLeft / msPerDay;
+					daysLeft = Math.floor(e_daysLeft);
+					e_hrsLeft = (e_daysLeft - daysLeft)*24;
+					hrsLeft = Math.floor(e_hrsLeft);
+					minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
+					document.write(daysLeft + " days " + hrsLeft +" hours and " + minsLeft + " minutes");
+					</script>
+					<!---------------------------->
+				</p>
 			</div>
 		</header>
+
+		<section class="section-wrapper get-address">
+			<h2 class="row row-item">We need your help!</h2>
+
+			<p class="row row-item">Trying to hunt down everybody's address has been impossible! If you could click the link below and send us your address, we'll be sure to get a physical invite sent to you!</p>
+			<a href="https://docs.google.com/forms/d/1r45RLMNnttlBLElFDWgw-FpK9PYwsXiOgprbN_SLiGo/viewform?usp=send_form" target=_blank>Send me an invite!</a>
+
+		</section>
 		
 
 		<section class="section-wrapper" id="aboutUs">
